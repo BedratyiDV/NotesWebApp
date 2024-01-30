@@ -1,0 +1,52 @@
+﻿@using NoteContracts;
+@model IEnumerable<Note>
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text">Note List</h2>
+        </div>
+
+        </div>
+    <br />
+
+    <table class="table table-bordered table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>
+                    Note Id
+                </th>
+                <th>
+                    Note Name
+                </th>
+                <th>
+                    Note Value
+                </th>
+                <th>
+                    Priority
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var obj in Model)
+            {
+                <tr>
+                    <td width="10%">
+                        @obj.Id
+                    </td>
+                    <td width="30%">
+                        @obj.Name
+                    </td>
+                    <td width="30%">
+                        @obj.Value
+                    </td>
+                    <td width="20%">
+                        @obj.Priority
+                    </td>
+                    
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
