@@ -1,0 +1,49 @@
+﻿<Window x:Class="WpfNotesApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfNotesApp"
+        mc:Ignorable="d"
+       Title="Notes List" Height="771" Width="1384">
+    <StackPanel Margin="1,7,424,215" RenderTransformOrigin="0.5,0.5">
+        <StackPanel.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform AngleX="-0.719"/>
+                <RotateTransform/>
+                <TranslateTransform X="2.46"/>
+            </TransformGroup>
+        </StackPanel.RenderTransform>
+        <DataGrid x:Name="MainGrid" ColumnWidth="*" IsReadOnly="True"
+             AutoGenerateColumns="False" Height="163" RenderTransformOrigin="0.5,0.5">
+            <DataGrid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </DataGrid.RenderTransform>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}"/>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="Value" Binding="{Binding Value}"/>
+                <DataGridTextColumn Header="Priority" Binding="{Binding Priority}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Grid Height="32">
+            <Button Content="Show All Notes" Margin="11,307,685,-312" x:Name="ShowNotesBtn" Click="ShowNotesBtn_Click" RenderTransformOrigin="0.585,3.869">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-0.505"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+        </Grid>
+       
+    </StackPanel>
+</Window>
