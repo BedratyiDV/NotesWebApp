@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoteDAL", "NoteDAL\NoteDAL.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotesProcessor", "NoteProcessor\NotesProcessor.csproj", "{55F607ED-4C95-4286-A96C-A30687D4FC4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfNotesApp", "WpfNotesApp\WpfNotesApp.csproj", "{1AD763A0-BFB3-44FF-860F-25271B4098C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfNotesApp", "WpfNotesApp\WpfNotesApp.csproj", "{1AD763A0-BFB3-44FF-860F-25271B4098C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotesProcessor.Tests", "NoteProcessor.Tests\NotesProcessor.Tests.csproj", "{22DB6B23-B505-48CB-A8EC-883D53997437}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{1AD763A0-BFB3-44FF-860F-25271B4098C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AD763A0-BFB3-44FF-860F-25271B4098C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AD763A0-BFB3-44FF-860F-25271B4098C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22DB6B23-B505-48CB-A8EC-883D53997437}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22DB6B23-B505-48CB-A8EC-883D53997437}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22DB6B23-B505-48CB-A8EC-883D53997437}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22DB6B23-B505-48CB-A8EC-883D53997437}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
